@@ -5,14 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learning CSS Grid Flex</title>
     <style>
+        .container{
+display: flex;
+/* flex-direction: row-reverse; */
+justify-content: space-between;
+        }
+        
         .box{
             border: 3px solid blue;
             height: 100px;
+            
         }
+        div{
+            font-size: 2rem;
+        }
+        .user-container{
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .user{
+            border: 3px solid rgb(248, 8, 88);
+            height: 100px;
+        }
+        .pic-container{
+            display: flex;
+            border: 2px solid green;
+            height: 500px;
+            justify-content: center;
+            align-items: center;
+        }
+        .picture{
+            border: 3px solid black;
+            width: 200px;
+            height: 100px;
+        }
+
     </style>
 </head>
 <body>
-    
+    <div class="pic-container">
+        <div class="picture">Picture</div>
+    </div>
+    <div class="user-container">
+        <div class="user">user-1</div>
+        <div class="user">user-2</div>
+        <div class="user">user-3</div>
+        <div class="user">user-4</div>
+        <div class="user">user-5</div>
+        <div class="user">user-4</div>
+        <div class="user">user-5</div>
+        <div class="user">user-4</div>
+        <div class="user">user-5</div>
+        <div class="user">user-4</div>
+        <div class="user">user-5</div>
+        <div class="user">user-4</div>
+        <div class="user">user-5</div>
+        <div class="user">user-4</div>
+        <div class="user">user-5</div>
+        <div class="user">user-4</div>
+        <div class="user">user-5</div>
+    </div>
+<hr>
     <div class="container">
         <div class="box">box-1</div>
         <div class="box">box-2</div>
